@@ -19,7 +19,7 @@ const HeaderBody = styled.header`
 `
 const Title = styled.label`
     color: #721677;
-    font-size: 70px;
+    font-size: 80px;
     font-family: 'Fuzzy Bubbles', cursive;
     font-weight: 700;
 `

@@ -119,7 +119,7 @@ export default function Letter(props:any){
     return(
         <ImageContainer>
             <Image src={file}/>
-            <label>{fileName}</label>
+            <Label>{fileName.toUpperCase()}</Label>
         </ImageContainer>
     )
 }
@@ -134,4 +134,7 @@ const ImageContainer = styled.div`
 const Image = styled.img`
     width: 130px;
     height: 180px;
+`
+const Label = styled.label`
+    font-size: 35px;
 `
