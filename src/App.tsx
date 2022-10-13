@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components"
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Letter from "./components/Letter";
 
@@ -14,8 +15,8 @@ export default function App() {
   return (
     <Main>
       <AppBody>
-      <Header/>
-      <Input  type="text"
+        <Header/>
+        <Input  type="text"
               placeholder="Digite..."
               value={word}
               onChange={(e) => setWord(e.target.value)}
@@ -23,6 +24,7 @@ export default function App() {
         <LetterContainer>
           {word !== '' ? arrayWord?.map(item => <Letter fileName={item}/>) : <EmptyMessage>Traduza qualquer palavra!</EmptyMessage>}
         </LetterContainer>
+        
     </AppBody>
     </Main>
   );
@@ -33,21 +35,29 @@ const Main = styled.main`
   flex-direction: column;
   width: 100%;
   height: auto;
-  background: #dab5e4;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; 
 `
 const AppBody = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 80px;
   background: #fff;
-  height: 100vh;
-  width: 80%;
+  width: 70%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+  top: 0;
+  bottom: 0;
 `
 const LetterContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  position: relative;
 `
 const Input = styled.input`
   width: 50%;
@@ -59,10 +69,11 @@ const Input = styled.input`
   margin-top: -40px;
   margin-bottom: 20px;
   padding: 20px;
+  z-index: 9;
 `
 const EmptyMessage = styled.label`
   color: #cec7c7;
-  margin-top: 150px;
+  margin: 150px 0;
   font-size: 40px;
   font-family: 'Fuzzy Bubbles', cursive;
 `

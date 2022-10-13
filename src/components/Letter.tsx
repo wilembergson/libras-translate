@@ -130,6 +130,7 @@ const ImageContainer = styled.div`
     align-items: center;
     flex-direction: column;
     margin: 5px;
+    position: relative;
 `
 const Image = styled.img`
     width: 130px;
