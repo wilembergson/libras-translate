@@ -3,6 +3,7 @@ import styled from "styled-components"
 import a from "../alphabet/a.png"
 import b from "../alphabet/b.png"
 import c from "../alphabet/c.png"
+import ç from "../alphabet/ç.png"
 import d from "../alphabet/d.png"
 import e from "../alphabet/e.png"
 import f from "../alphabet/f.png"
@@ -26,6 +27,16 @@ import w from "../alphabet/w.png"
 import x from "../alphabet/x.png"
 import y from "../alphabet/y.png"
 import z from "../alphabet/z.png"
+import um from "../alphabet/1.png"
+import dois from "../alphabet/2.png"
+import tres from "../alphabet/3.png"
+import quatro from "../alphabet/4.png"
+import cinco from "../alphabet/5.png"
+import seis from "../alphabet/6.png"
+import sete from "../alphabet/7.png"
+import oito from "../alphabet/8.png"
+import nove from "../alphabet/9.png"
+import zero from "../alphabet/0.png"
 
 export default function Letter(props:any){
     const {fileName } = props
@@ -41,6 +52,9 @@ export default function Letter(props:any){
                 break
             case 'c':
                 setFile(c)
+                break
+            case 'ç':
+                setFile(ç)
                 break
             case 'd':
                 setFile(d)
@@ -110,6 +124,36 @@ export default function Letter(props:any){
                 break
             case 'z':
                 setFile(z)
+                break
+            case '1':
+                setFile(um)
+                break
+            case '2':
+                setFile(dois)
+                break
+            case '3':
+                setFile(tres)
+                break
+            case '4':
+                setFile(quatro)
+                break
+            case '5':
+                setFile(cinco)
+                break
+            case '6':
+                setFile(seis)
+                break
+            case '7':
+                setFile(sete)
+                break
+            case '8':
+                setFile(oito)
+                break
+            case '9':
+                setFile(nove)
+                break
+                case '0':
+            setFile(zero)
                 break
             default:
                 console.log("space.")
