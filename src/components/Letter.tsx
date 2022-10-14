@@ -119,7 +119,7 @@ export default function Letter(props:any){
     return(
         <ImageContainer>
             <Image src={file}/>
-            <Label>{fileName.toUpperCase()}</Label>
+            <Label translate="no">{fileName.toUpperCase()}</Label>
         </ImageContainer>
     )
 }

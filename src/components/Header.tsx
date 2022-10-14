@@ -4,7 +4,7 @@ import Cover from "../assets/cover.jpg"
 export default function Header(){
     return(
         <HeaderBody>
-            <Title>Libras Translate</Title>
+            <Title translate="no">Libras Translate</Title>
             <Img src={Cover}/>
         </HeaderBody>
     )
