@@ -51,7 +51,7 @@ const AppBody = styled.div`
   width: 70%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: relative;
-  @media(max-width: 430px){
+  @media(max-width: 550px){
     width: 90%;
     margin: 20px;
   }
@@ -73,7 +73,7 @@ const Input = styled.input`
   margin-bottom: 20px;
   padding: 20px;
   z-index: 9;
-  @media(max-width: 430px){
+  @media(max-width: 550px){
     width: 55%;
     font-size: 20px;
     padding: 10px;
@@ -85,7 +85,7 @@ const EmptyMessage = styled.label`
   margin: 150px 0;
   font-size: 40px;
   font-family: 'Fuzzy Bubbles', cursive;
-  @media(max-width: 430px){
+  @media(max-width: 550px){
     font-size: 25px;
   }
 `

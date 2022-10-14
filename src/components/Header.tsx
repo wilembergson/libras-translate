@@ -18,7 +18,7 @@ const HeaderBody = styled.header`
     flex-direction: column;
     width: 100%;
     height: 400px;
-    @media(max-width: 430px){
+    @media(max-width: 550px){
         height: 200px;
     }
 `
@@ -29,7 +29,7 @@ const Title = styled.label`
     font-family: 'Fuzzy Bubbles', cursive;
     font-weight: 700;
     z-index: 9;
-    @media(max-width: 430px){
+    @media(max-width: 550px){
         font-size: 40px;
         margin-top: 30px;
     }
@@ -39,7 +39,7 @@ const Img = styled.img`
     width: 80%;
     height: 400px;
     opacity: 0.6;
-    @media(max-width: 430px){
+    @media(max-width: 550px){
         height: 200px;
     }
 `
