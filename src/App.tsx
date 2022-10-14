@@ -40,6 +40,7 @@ const Main = styled.main`
   bottom: 0;
   right: 0;
   left: 0; 
+  overflow-y: scroll;
 `
 const AppBody = styled.div`
   display: flex;
@@ -50,8 +51,10 @@ const AppBody = styled.div`
   width: 70%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: relative;
-  top: 0;
-  bottom: 0;
+  @media(max-width: 430px){
+    width: 90%;
+    margin: 20px;
+  }
 `
 const LetterContainer = styled.div`
   display: flex;
@@ -64,16 +67,25 @@ const Input = styled.input`
   font-size: 30px;
   font-family: 'Fuzzy Bubbles', cursive;
   color: #721677;
-  border: solid 2px #721677;
+  border: solid 3px #721677;
   border-radius: 8px;
   margin-top: -40px;
   margin-bottom: 20px;
   padding: 20px;
   z-index: 9;
+  @media(max-width: 430px){
+    width: 55%;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: -25px;
+  }
 `
 const EmptyMessage = styled.label`
   color: #cec7c7;
   margin: 150px 0;
   font-size: 40px;
   font-family: 'Fuzzy Bubbles', cursive;
+  @media(max-width: 430px){
+    font-size: 25px;
+  }
 `

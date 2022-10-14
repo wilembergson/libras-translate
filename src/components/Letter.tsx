@@ -135,7 +135,14 @@ const ImageContainer = styled.div`
 const Image = styled.img`
     width: 130px;
     height: 180px;
+    @media(max-width: 430px){
+        width: 50px;
+        height: 90px;
+    }
 `
 const Label = styled.label`
     font-size: 35px;
+    @media(max-width: 430px){
+        font-size: 15px;
+    }
 `
