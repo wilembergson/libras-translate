@@ -17,4 +17,4 @@ Deploy: https://libras-translate.vercel.app/
 </br></br></br>
 
 ## Ajustes
-- Letras com acento ainda e caracteres ainda não foram implementados.
+- Letras com acento e caracteres ainda não foram implementados.
