@@ -38,12 +38,12 @@ import oito from "../alphabet/8.png"
 import nove from "../alphabet/9.png"
 import zero from "../alphabet/0.png"
 
-export default function Letter(props:any){
-    const {fileName } = props
+export default function Letter(props: any) {
+    const { fileName } = props
     const [file, setFile] = useState()
 
     useEffect(() => {
-        switch(fileName.toLowerCase()) {
+        switch (fileName.toLowerCase()) {
             case 'a':
                 setFile(a)
                 break
@@ -152,16 +152,16 @@ export default function Letter(props:any){
             case '9':
                 setFile(nove)
                 break
-                case '0':
-            setFile(zero)
+            case '0':
+                setFile(zero)
                 break
             default:
                 console.log("space.")
         }
     }, [])
 
-    return(
-        <ImageContainer>
+    return (
+        <ImageContainer data-aos="zoom-in">
             <Image src={file}/>
             <Label translate="no">{fileName.toUpperCase()}</Label>
         </ImageContainer>
@@ -175,7 +175,7 @@ const ImageContainer = styled.div`
     flex-direction: column;
     margin: 5px;
     position: relative;
-`
+    `
 const Image = styled.img`
     width: 130px;
     height: 180px;
