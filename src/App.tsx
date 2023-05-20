@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components"
-import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Letter from "./components/Letter";
+import AOS from 'aos'
 
 export default function App() {
+  AOS.init();
   const [word, setWord] = useState<string>('')
   const [arrayWord, setArrayWord] = useState<string[]>()
 
@@ -14,7 +15,7 @@ export default function App() {
 
   return (
     <Main>
-      <AppBody>
+      <AppBody data-aos="zoom-in">
         <Header/>
         <Input  type="text"
               placeholder="Digite..."
