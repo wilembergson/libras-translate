@@ -16,17 +16,17 @@ export default function App() {
   return (
     <Main>
       <AppBody data-aos="zoom-in">
-        <Header/>
-        <Input  type="text"
-              placeholder="Digite..."
-              value={word}
-              onChange={(e) => setWord(e.target.value)}
+        <Header />
+        <Input type="text"
+          placeholder="Digite..."
+          value={word}
+          maxLength={18}
+          onChange={(e) => setWord(e.target.value)}
         />
         <LetterContainer>
-          {word !== '' ? arrayWord?.map(item => <Letter fileName={item}/>) : <EmptyMessage>Traduza qualquer palavra!</EmptyMessage>}
+          {word !== '' ? arrayWord?.map(item => <Letter fileName={item} />) : <EmptyMessage>Traduza qualquer palavra!</EmptyMessage>}
         </LetterContainer>
-        
-    </AppBody>
+      </AppBody>
     </Main>
   );
 }
@@ -45,11 +45,13 @@ const Main = styled.main`
 `
 const AppBody = styled.div`
   display: flex;
+  background: #000;
   align-items: center;
   flex-direction: column;
   padding-bottom: 80px;
   background: #fff;
   width: 70%;
+  height: 100%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: relative;
   @media(max-width: 550px){
@@ -65,14 +67,14 @@ const LetterContainer = styled.div`
 `
 const Input = styled.input`
   width: 50%;
-  font-size: 30px;
+  font-size: 20px;
   font-family: 'Fuzzy Bubbles', cursive;
   color: #721677;
   border: solid 3px #721677;
   border-radius: 8px;
-  margin-top: -40px;
+  margin-top: -30px;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 12px;
   z-index: 9;
   @media(max-width: 550px){
     width: 55%;
@@ -83,8 +85,8 @@ const Input = styled.input`
 `
 const EmptyMessage = styled.label`
   color: #cec7c7;
-  margin: 150px 0;
-  font-size: 40px;
+  margin: 100px 0;
+  font-size: 35px;
   font-family: 'Fuzzy Bubbles', cursive;
   @media(max-width: 550px){
     font-size: 25px;

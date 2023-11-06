@@ -177,15 +177,15 @@ const ImageContainer = styled.div`
     position: relative;
     `
 const Image = styled.img`
-    width: 130px;
-    height: 180px;
+    width: 100px;
+    height: 130px;
     @media(max-width: 550px){
         width: 50px;
         height: 90px;
     }
 `
 const Label = styled.label`
-    font-size: 35px;
+    font-size: 23px;
     @media(max-width: 550px){
         font-size: 15px;
     }

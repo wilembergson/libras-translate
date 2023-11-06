@@ -17,7 +17,8 @@ const HeaderBody = styled.header`
     background: #fff;
     flex-direction: column;
     width: 100%;
-    height: 400px;
+    height: 340px;
+    margin-top:-50px;
     @media(max-width: 550px){
         height: 200px;
     }
@@ -25,7 +26,7 @@ const HeaderBody = styled.header`
 const Title = styled.label`
     color: #9a24a0;
     margin-top: 50px;
-    font-size: 90px;
+    font-size: 80px;
     font-family: 'Fuzzy Bubbles', cursive;
     font-weight: 700;
     z-index: 9;
@@ -37,7 +38,7 @@ const Title = styled.label`
 const Img = styled.img`
     position: absolute;
     width: 80%;
-    height: 400px;
+    height: 340px;
     opacity: 0.6;
     @media(max-width: 550px){
         height: 200px;
